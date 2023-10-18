@@ -1,0 +1,28 @@
+﻿<Window x:Class="okn.Vxod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:okn"
+        mc:Ignorable="d"
+        Title="Vxod" Height="450" Background="Bisque" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="620*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Background="WhiteSmoke" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Height="75" Width="575"/>
+        <TextBox Background="WhiteSmoke" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Height="75" Width="575"/>
+        <TextBox Background="WhiteSmoke" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Height="75" Width="575"/>
+        <TextBlock Grid.Column="0" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="60,0,0,0" Height="21" Width="59"  >ФИО</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0" Height="21" Width="150" >Дата Рождения</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,20,0,0" Height="56" Width="170" TextWrapping="Wrap" Grid.ColumnSpan="2"  >Информация о вас</TextBlock>
+        <Button Width="75" Height="40" FontWeight="Bold" Background="WhiteSmoke" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20" Click="backClick">Назад</Button>
+    </Grid>
+</Window>
